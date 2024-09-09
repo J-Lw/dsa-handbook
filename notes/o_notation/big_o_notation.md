@@ -23,4 +23,16 @@
 - Each of the unique function forms can be used to describe time or space complexity.
 
 ### Calculating Complexity
+- Roughly speaking, the function describing an algorithm calculates the number of operations or amount of memory it consumes relative to its input size.
+- Time complexity is not meant to be an exact representation of number of operations.
+- The primary aim of time complexity is to describe how the number of operations changes as the input changes.
+- Rule one: ignore constants - thus O(999n) = O(8n) = O(n) = O(n/500).
+- Constants are ignored because they are not relevant for determining how an algorithm scales (they are always O(n)).
+- O(n) is: algorithm A determines and returns the largest n in an array, and is O(n) because for each additional item in the array, the algorithm will run 'additional item' amount of times more. More specifically, for each n increase in elements in the array, the algorithm will run n more times.
+- The point of complexity is to analyze the algorithm as the input changes.
+- What matters is the nature of how the number of operations needed to run changes with respect to input.
+- Rule two: complexity is considered as variables tend to infinity.
+- With an algorithm that requires n + 500 operations, it has a time complexity of O(n), and when n is small, the +500 is significant, but as n approaches infinity, the +500 becomes insignificant, thus complexity analysis is to be performed as if n is tending toward infinity.
+- The best complexity possible is O(1), called constant time/space. In this case, the algorithm always uses the same amount of resources regardless of the input.
+- An algorithm of O(1) does not necessarily mean that the algorithm is fast, it simply means that its runtime is independent on the size of its input.
 - 
