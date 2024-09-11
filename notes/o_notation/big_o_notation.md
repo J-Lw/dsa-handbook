@@ -60,4 +60,10 @@
 - Thus the time complexity of the for loop is O(1*n), which simplifies to O(n).
 - The algorithms time complexity is O(n).
 
+'''
+  let x: [i32; 5] = [1, 2, 3, 4, 5];
 
+  for i in x.iter() {
+    
+  }
+'''
