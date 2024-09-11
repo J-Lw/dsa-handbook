@@ -35,4 +35,29 @@
 - With an algorithm that requires n + 500 operations, it has a time complexity of O(n), and when n is small, the +500 is significant, but as n approaches infinity, the +500 becomes insignificant, thus complexity analysis is to be performed as if n is tending toward infinity.
 - The best complexity possible is O(1), called constant time/space. In this case, the algorithm always uses the same amount of resources regardless of the input.
 - An algorithm of O(1) does not necessarily mean that the algorithm is fast, it simply means that its runtime is independent on the size of its input.
-- 
+- In the context of complexity, there are three types of cases: best case, average case, worst case.
+- Most of the time, algorithms complexity will be the same across all cases, but sometimes they are different.
+- Worst case complexity is the standard typically used when assessing algorithms.
+
+### Analyzing Time Complexity
+'''  
+  let x: [i32; 5] = [1, 2, 3, 4, 5]; 
+
+  for i in x.iter() {
+    println!(i);
+  }
+'''
+- Time complexity: O(n).
+- Print costs O(1).
+- Printing is an O(1) operation as it will always only run once regardless of what the algorithms input is.
+- The for loop interates n times.
+- With each increase in size for x, the for loop will then run 'n increase in size' amount of times.
+- If x is size 6, the for loop will run 6 times.
+- Thus the for loop is dependant on the size of the input.
+- The for loop scales in amount of operations with/as x increases in size.
+- The amount of times the for loop will run is equivalent to 1 * n.
+- This is because the for loop runs once for each n in x.
+- Thus the time complexity of the for loop is O(1*n), which simplifies to O(n).
+- The algorithms time complexity is O(n).
+
+
